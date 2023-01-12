@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.items{
+    width: 100%;
+    border: 2px solid lightcoral;
+    padding: 15px;
+    border-radius: 8px;
+}
+.items img{
+    width: 80%;
+    height: 800px;
+    object-fit: cover;
+}
+@media screen and (max-width: 576px) {
+ .container{
+    grid-template-columns: repeat(1,1fr);
+ }
+}
+@media screen and (min-width: 577px) and (max-width: 992px){
+    .container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
